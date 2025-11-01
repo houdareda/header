@@ -32,6 +32,66 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     });
 
+// Header Scroll Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    let lastScrollTop = 0;
+    let scrollThreshold = 500; // Minimum scroll distance to trigger hide/show
+    let isScrolling = false;
+
+    function handleScroll() {
+        if (!isScrolling) {
+            window.requestAnimationFrame(function() {
+                const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                // Add active class when scrolled down from top
+                if (currentScrollTop > 50) {
+                    header.classList.add('header-active');
+                } else {
+                    header.classList.remove('header-active');
+                    header.classList.remove('header-hidden');
+                    isScrolling = false;
+                    return;
+                }
+
+                // Check scroll direction and distance
+                const scrollDifference = Math.abs(currentScrollTop - lastScrollTop);
+                
+                if (scrollDifference > scrollThreshold) {
+                    if (currentScrollTop > lastScrollTop && currentScrollTop > 200) {
+                        // Scrolling down - hide header
+                        header.classList.add('header-hidden');
+                    } else if (currentScrollTop < lastScrollTop) {
+                        // Scrolling up - show header
+                        header.classList.remove('header-hidden');
+                    }
+                    
+                    lastScrollTop = currentScrollTop;
+                }
+                
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    }
+
+    // Throttled scroll event listener
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+        if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+        }
+        scrollTimeout = setTimeout(handleScroll, 10);
+    });
+
+    // Handle window resize to reset header state
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 992) {
+            header.classList.remove('header-hidden');
+        }
+    });
+});
+
                     // Toggle current dropdown
                     dropdownMenu.classList.toggle('show');
                 }
@@ -823,4 +883,171 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize cart on page load
     initCart();
+});
+
+// Header Scroll Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    let lastScrollTop = 0;
+    let scrollThreshold = 50; // Minimum scroll distance to trigger hide/show
+    let activationPoint = 100; // Point where header behavior starts
+    let isScrolling = false;
+
+    function handleScroll() {
+        if (!isScrolling) {
+            window.requestAnimationFrame(function() {
+                const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                // If we're in the first 500px, keep header normal
+                if (currentScrollTop <= activationPoint) {
+                    header.classList.remove('header-active');
+                    header.classList.remove('header-hidden');
+                    lastScrollTop = currentScrollTop;
+                    isScrolling = false;
+                    return;
+                }
+
+                // After 500px, start the show/hide behavior
+                const scrollDifference = Math.abs(currentScrollTop - lastScrollTop);
+                
+                if (scrollDifference > scrollThreshold) {
+                    if (currentScrollTop > lastScrollTop) {
+                        // Scrolling down - hide header
+                        header.classList.add('header-hidden');
+                        header.classList.remove('header-active');
+                    } else {
+                        // Scrolling up - show header with active class
+                        header.classList.remove('header-hidden');
+                        header.classList.add('header-active');
+                    }
+                    
+                    lastScrollTop = currentScrollTop;
+                }
+                
+                isScrolling = false;
+            });
+        }
+        isScrolling = true;
+    }
+
+    // Throttled scroll event listener
+    let scrollTimeout;
+    window.addEventListener('scroll', function() {
+        if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+        }
+        scrollTimeout = setTimeout(handleScroll, 10);
+    });
+
+    // Handle window resize to reset header state
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 992) {
+            header.classList.remove('header-hidden');
+            // Keep active class if we're past activation point
+            const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (currentScrollTop <= activationPoint) {
+                header.classList.remove('header-active');
+            }
+        }
+    });
+});
+
+// Destinations Section Animations and Lazy Loading
+document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer for destination cards animation
+    const destCards = document.querySelectorAll('.dest-card');
+    
+    if (destCards.length > 0) {
+        const destObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Add staggered animation delay
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                    
+                    destObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Initialize cards with hidden state and observe them
+        destCards.forEach((card) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            destObserver.observe(card);
+        });
+    }
+
+    // Lazy loading for destination images
+    const destImages = document.querySelectorAll('.dest-img');
+    
+    if (destImages.length > 0) {
+        const imageObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    
+                    // Add loading class for smooth transition
+                    img.classList.add('loading');
+                    
+                    // Create a new image to preload
+                    const newImg = new Image();
+                    newImg.onload = function() {
+                        img.src = this.src;
+                        img.classList.remove('loading');
+                        img.classList.add('loaded');
+                    };
+                    newImg.src = img.dataset.src || img.src;
+                    
+                    imageObserver.unobserve(img);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '50px'
+        });
+
+        destImages.forEach((img) => {
+            imageObserver.observe(img);
+        });
+    }
+
+    // Animate destination header on scroll
+    const destHeader = document.querySelector('.dest-header');
+    if (destHeader) {
+        const headerObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    headerObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        destHeader.style.opacity = '0';
+        destHeader.style.transform = 'translateY(20px)';
+        destHeader.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        headerObserver.observe(destHeader);
+    }
+
+    // View All button hover effect enhancement
+    const viewAllBtn = document.querySelector('.view-all-btn');
+    if (viewAllBtn) {
+        viewAllBtn.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px) scale(1.02)';
+        });
+        
+        viewAllBtn.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    }
 });
