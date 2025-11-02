@@ -131,4 +131,45 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
     });
+
+    const categoriesSwiper = new Swiper('.categories-swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 200000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+        },
+        speed: 800,
+ 
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+ 
+        breakpoints: {
+            // Mobile (up to 767px): 1 slide
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            // Tablet (768px and up): 2 slides
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            // Desktop (1024px and up): 3 slides
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            // Large screens (1200px and up): 3 slides with more space
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
+
+    });
 });

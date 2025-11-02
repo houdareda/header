@@ -63,14 +63,13 @@ p {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 90%;
+    max-width: 80%;
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 500px) {
   .container {
-    max-width: 100%;
-    padding-inline: 20px;
+    max-width: 90%;
   }
 }
 
@@ -523,7 +522,9 @@ section{
 @media (max-width: 768px) {
     .descount_banner .container{
     padding: 0;
-    border-radius: 0;        
+    border-radius: 0;  
+    width: 100%;      
+    min-width: 100%;
     }
     .descount_banner .container .descount_banner_item{
         flex-direction: column;
@@ -710,6 +711,15 @@ ease-out .3s backwards;
     position: relative;
     top: 0;
     transition: 0.3s ease-in-out;
+}
+.tours .tours_item .tours_link{
+    position: absolute;
+    background: rgba(255, 0, 0, 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 .tours .swiper .swiper-slide-next{
     scale: 1.02;
@@ -992,9 +1002,11 @@ gap: 5px;
     font-weight: bold !important;
 }
 .swiper-button-next{
-    right: 0px !important;
+    right: -0px !important;
 }
-
+.swiper-button-prev{
+    left: -0px !important;
+}
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-size: 16px !important;
@@ -1023,7 +1035,138 @@ gap: 5px;
 
 
 
+/* Categories Swiper Styles */
+.categories .mySwiper{
+    padding: 0px 20px;
+}
+.categories .dest_items{
+    padding: 15px 0px;
+}
+.categories .dest_item{
+    height: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 15px -3px rgba(36, 36, 36, 0.158);
+    transition: 0.3s ease-in-out;
+    top: 0;
+}
+.categories .dest_item:hover{
+top: -10px;
+    box-shadow: 0 10px 15px -3px rgba(36, 36, 36, 0.342);
+}
 
+.categories .dest_item .div_img{
+    width: 100%;
+    height: 100%;
+}
+.categories .dest_item .div_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+    
+}
+.categories .dest_item:hover .div_img img{
+    scale: 1.05;
+    rotate: 2deg;
+}
+
+.categories .dest_item .dest_content{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .95) 0%, rgba(0, 0, 0, .7) 40%, rgba(0, 0, 0, .3) 70%, transparent 100%);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: var(--bg-white-color);
+    z-index: 2;
+}
+.categories .dest_item .dest_badge{
+position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--text-strong-color);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+      box-shadow: 0 10px 15px -3px rgba(36, 36, 36, 0.158);
+    border: 1px solid rgba(255, 255, 255, .3);
+    animation: ds-bounceIn .6s 
+ease-out .3s backwards;
+}
+.categories .dest_item .dest_content h4{
+    font-weight: 800;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: var(--bg-white-color);
+}
+.categories .dest_item .dest_content p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+    color: rgba(255, 255, 255, .9);
+}
+.categories .dest_item .dest_content .dest_meta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.categories .dest_item .dest_content .dest_meta .rate{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(251, 191, 36, .2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid rgba(251, 191, 36, .3);
+}
+.categories .dest_item .dest_content .dest_meta span i{
+    color: #FBBF24;
+}
+
+
+@media (max-width: 992px) {
+    .categories .dest_item{
+        width: 48%;
+        height: 320px;
+    }
+}
+@media (max-width: 480px) {
+     .categories .dest_item{
+        width: 48.5%;
+        height: 260px;
+        margin-bottom: 15px;
+     }
+     .categories .dest_item .dest_content .dest_meta{
+        gap: 8px;
+     }
+    .categories .dest_item .dest_content .dest_meta .rate{
+        font-size: 14px;
+        padding: 6px 12px;
+        gap: 8px;
+    }
+    .categories .dest_item .dest_content .dest_meta span i{
+        font-size: 14px;
+
+    }
+    .categories .dest_item .dest_content h4{
+        font-size: 16px;
+    }
+    .categories .dest_item .dest_content p{
+        font-size: 13px;
+    }
+}
 
 
 
@@ -1215,3 +1358,4 @@ footer  .bottom_footer .payment_img{
 
 
 /* End Footer */
+
