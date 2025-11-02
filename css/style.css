@@ -1118,7 +1118,6 @@ footer .container .row .links a{
     transition: 0.3s;
 }
 footer .container .row .links a i{
-    color: var(--main_color);
     font-size: 14px;
     margin-right: 5px;
 }
@@ -1127,14 +1126,14 @@ footer .container .row .links a:hover{
     color: var(--sand-color);
 }
 footer  .bottom_footer{
-    background: #1d1f22;
+    background: #161d30;
 }
 footer  .bottom_footer .container{
     align-items: center;
-    padding: 5px 0;
+    padding: 20px 0;
 }
 footer  .bottom_footer p{
-    color: var(--white_color);
+    color: var(--bg-white-color);
 }
 
 footer  .bottom_footer .payment_img{
@@ -1145,11 +1144,11 @@ footer  .bottom_footer .payment_img{
 .payment_img {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 18px;
 }
 
 .payment_img i {
-    font-size: 24px;
+    font-size: 30px;
     color: #fff;
     opacity: 0.8;
     transition: all 0.3s ease;
@@ -1203,6 +1202,10 @@ footer  .bottom_footer .payment_img{
     }
     footer .container .big_row{
         width: 100%;
+    }
+    footer .bottom_footer .payment_img{
+        justify-content: center;
+        margin-top: 10px;
     }
 }
 
