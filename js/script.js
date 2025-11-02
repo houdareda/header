@@ -98,16 +98,11 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         speed: 800,
  
-        touchRatio: 1,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-            dynamicBullets: true,
-        },
+ 
         breakpoints: {
             // Mobile (up to 767px): 1 slide
             320: {
