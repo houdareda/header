@@ -76,7 +76,48 @@ p {
 li {
   list-style: none;
 }
-
+.div_btns{
+    padding: 20px 0;
+    text-align: center;
+}
+.btns_btm_sec{
+    margin-top: 50px;
+    padding-bottom: 0;
+}
+.btn{
+    background-color: var(--primary-color);
+    color: #FFF;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: max-content;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    border: 2px solid var(--primary-color);
+}
+.btn:hover{
+    background: transparent;
+    color: var(--primary-color);
+}
+.btn .arrow_rotate{
+    rotate: -45deg;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.btn:hover .arrow_rotate{
+    top: -3px;
+    right: -3px;
+}
 
 section{
     padding: 80px 0;
