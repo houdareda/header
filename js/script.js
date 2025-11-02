@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
         breakpoints: {
             // Mobile (up to 767px): 1 slide
             320: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 10,
             },
             // Tablet (768px and up): 2 slides
