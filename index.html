@@ -8,11 +8,18 @@
     <!-- icon -->
     <link rel="icon" href="img/logo.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
 
     <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
 
@@ -616,10 +623,7 @@
       </div>
     </section>
 
-
-
-
-       <!-- Features Section -->
+    <!-- Features Section -->
     <section class="features-section">
       <div class="container">
         <div class="features-grid">
@@ -666,236 +670,17 @@
       </div>
     </section>
 
+    <!-- Destinations Section -->
 
+    <section class="dest_section">
+      <div class="head_sec">
+        <h2>Top Egypt Destinations</h2>
+        <p>Discover the most popular tourist destinations & attractions</p>
+      </div>
 
-    <section id="dest-section" aria-labelledby="dest-heading">
-
-        <div class="head-sec">
-                <h2 id="dest-heading">Top Egypt Destinations</h2>
-                <p>Discover the most popular tourist destinations & attractions</p>
-            </div>
-        <div class="container">
-            
-            
-            <div class="dest-grid" role="list">
-                <article class="dest-card" role="listitem">
-                    <a href="#" aria-label="Explore Hurghada tours">
-                        <img src="https://egyptra.pro/uploads/photo_library/photo_67bc30811a9b4.jpg" 
-                             alt="Hurghada - Red Sea paradise"
-                             class="dest-img" 
-                             loading="lazy" 
-                             decoding="async"
-                             width="280" 
-                             height="360">
-                        
-                        <div class="dest-overlay">
-                            <span class="dest-badge" aria-label="15 tours available">
-                                15 tours
-                            </span>
-                            
-                            <h3 class="dest-title">Hurghada</h3>
-                            <p class="dest-desc">Red Sea paradise</p>
-                            
-                            <div class="dest-meta">
-                                <div class="dest-rating" aria-label="Rating: 4.8 out of 5">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    <span>4.8</span>
-                                </div>
-                                <div class="dest-price" aria-label="Starting from €25">
-                                    From €25
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="dest-card" role="listitem">
-                    <a href="#" aria-label="Explore Sharm El Sheikh tours">
-                        <img src="https://egyptra.pro/uploads/photo_library/photo_67bc30811d5b6.jpg" 
-                             alt="Sharm El Sheikh - Diving & coral reefs"
-                             class="dest-img" 
-                             loading="lazy" 
-                             decoding="async"
-                             width="280" 
-                             height="360">
-                        
-                        <div class="dest-overlay">
-                            <span class="dest-badge" aria-label="12 tours available">
-                                12 tours
-                            </span>
-                            
-                            <h3 class="dest-title">Sharm El Sheikh</h3>
-                            <p class="dest-desc">Diving & coral reefs</p>
-                            
-                            <div class="dest-meta">
-                                <div class="dest-rating" aria-label="Rating: 4.7 out of 5">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    <span>4.7</span>
-                                </div>
-                                <div class="dest-price" aria-label="Starting from €30">
-                                    From €30
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="dest-card" role="listitem">
-                    <a href="#" aria-label="Explore Cairo tours">
-                        <img src="https://egyptra.pro/uploads/photo_library/photo_67bc308119c48.jpeg" 
-                             alt="Cairo - Pyramids & culture"
-                             class="dest-img" 
-                             loading="lazy" 
-                             decoding="async"
-                             width="280" 
-                             height="360">
-                        
-                        <div class="dest-overlay">
-                            <span class="dest-badge" aria-label="20 tours available">
-                                20 tours
-                            </span>
-                            
-                            <h3 class="dest-title">Cairo</h3>
-                            <p class="dest-desc">Pyramids & culture</p>
-                            
-                            <div class="dest-meta">
-                                <div class="dest-rating" aria-label="Rating: 4.9 out of 5">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    <span>4.9</span>
-                                </div>
-                                <div class="dest-price" aria-label="Starting from €35">
-                                    From €35
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="dest-card" role="listitem">
-                    <a href="#" aria-label="Explore Luxor tours">
-                        <img src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg" 
-                             alt="Luxor - Valley of Kings"
-                             class="dest-img" 
-                             loading="lazy" 
-                             decoding="async"
-                             width="280" 
-                             height="360">
-                        
-                        <div class="dest-overlay">
-                            <span class="dest-badge" aria-label="18 tours available">
-                                18 tours
-                            </span>
-                            
-                            <h3 class="dest-title">Luxor</h3>
-                            <p class="dest-desc">Valley of Kings</p>
-                            
-                            <div class="dest-meta">
-                                <div class="dest-rating" aria-label="Rating: 4.6 out of 5">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    <span>4.6</span>
-                                </div>
-                                <div class="dest-price" aria-label="Starting from €40">
-                                    From €40
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="dest-card" role="listitem">
-                    <a href="#" aria-label="Explore El Gouna tours">
-                        <img src="https://egyptra.pro/uploads/photo_library/photo_67bc30811a33e.jpg" 
-                             alt="El Gouna - Exclusive resort"
-                             class="dest-img" 
-                             loading="lazy" 
-                             decoding="async"
-                             width="280" 
-                             height="360">
-                        
-                        <div class="dest-overlay">
-                            <span class="dest-badge" aria-label="8 tours available">
-                                8 tours
-                            </span>
-                            
-                            <h3 class="dest-title">El Gouna</h3>
-                            <p class="dest-desc">Exclusive resort</p>
-                            
-                            <div class="dest-meta">
-                                <div class="dest-rating" aria-label="Rating: 4.5 out of 5">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    <span>4.5</span>
-                                </div>
-                                <div class="dest-price" aria-label="Starting from €45">
-                                    From €45
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="dest-card" role="listitem">
-                    <a href="#" aria-label="Explore Marsa Alam tours">
-                        <img src="https://egyptra.pro/uploads/photo_library/photo_67bc30811ca66.jpg" 
-                             alt="Marsa Alam - Pristine diving"
-                             class="dest-img" 
-                             loading="lazy" 
-                             decoding="async"
-                             width="280" 
-                             height="360">
-                        
-                        <div class="dest-overlay">
-                            <span class="dest-badge" aria-label="10 tours available">
-                                10 tours
-                            </span>
-                            
-                            <h3 class="dest-title">Marsa Alam</h3>
-                            <p class="dest-desc">Pristine diving</p>
-                            
-                            <div class="dest-meta">
-                                <div class="dest-rating" aria-label="Rating: 4.4 out of 5">
-                                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                    </svg>
-                                    <span>4.4</span>
-                                </div>
-                                <div class="dest-price" aria-label="Starting from €35">
-                                    From €35
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-            </div>
-            
-            <div class="dest-cta">
-                <a href="#" class="view-all-btn" aria-label="View all destinations">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M12 6v12m6-6H6"/>
-                    </svg>
-                    <span>View All Destinations</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <div class="descount_banner">
       <div class="container">
-          <a href="cart.html" class="descount_banner_item clickable-banner">
-
+        <div class="dest_items">
+          <a href="#" class="dest_item">
             <div class="div_img">
               <img
                 src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
@@ -903,37 +688,897 @@
               />
             </div>
 
-            <div class="content">
-              <div class="text">
-                <h4>Enjoy Summer Deals</h4>
-                <h3>Up to 40% Discount!</h3>
-                <span class="btn"
-                  >See Details
-                  <svg
-                    width="21"
-                    height="16"
-                    viewBox="0 0 21 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+            <div class="dest_content">
+              <span class="dest_badge" aria-label="103 tours available">
+                103 tours
+              </span>
+
+              <h4>Hurghada</h4>
+              <p>Red Sea paradise</p>
+
+              <div class="dest_meta">
+                <span class="rate"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
                     <path
-                      d="M1.0017 8.00001H19.9514M19.9514 8.00001L12.9766 1.02515M19.9514 8.00001L12.9766 14.9749"
-                      stroke="currentColor"
-                      stroke-width="1.77778"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path></svg></span>
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  4.5</span
+                >
+                <span class="price">From €120</span>
               </div>
-              <img src="img/sm_icon_baanner.webp" alt="" />
+            </div>
+          </a>
+
+          <a href="#" class="dest_item">
+            <div class="div_img">
+              <img
+                src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
+                alt=""
+              />
             </div>
 
+            <div class="dest_content">
+              <span class="dest_badge" aria-label="103 tours available">
+                103 tours
+              </span>
+
+              <h4>Hurghada</h4>
+              <p>Red Sea paradise</p>
+
+              <div class="dest_meta">
+                <span class="rate"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  4.5</span
+                >
+                <span class="price">From €120</span>
+              </div>
+            </div>
           </a>
+
+          <a href="#" class="dest_item">
+            <div class="div_img">
+              <img
+                src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="dest_content">
+              <span class="dest_badge" aria-label="103 tours available">
+                103 tours
+              </span>
+
+              <h4>Hurghada</h4>
+              <p>Red Sea paradise</p>
+
+              <div class="dest_meta">
+                <span class="rate"
+                  ><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    ></path>
+                  </svg>
+                  4.5</span
+                >
+                <span class="price">From €120</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tours">
+      <div class="head_sec">
+        <h2>Most Popular Tours</h2>
+        <p>
+          Discover our most loved tours and unforgettable experiences in Egypt
+        </p>
+      </div>
+
+      <div class="container swiper mySwiper tours-swiper">
+        <div class="tours_items swiper-wrapper">
+
+          <div class="tours_item swiper-slide">
+            <a href="#" class="tours_link"></a>
+            <div class="tour_img">
+              <div class="badge">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <button
+                class="btn_share"
+                onclick="event.stopPropagation();event.preventDefault();toggleShare(event,'tour-1')"
+                aria-label="Share tour"
+                aria-expanded="false"
+                aria-haspopup="true"
+                type="button"
+              >
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </button>
+
+              <div class="share-dropdown" id="share-tour-1" role="menu">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-facebook-f"
+                    style="color: #1877f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href="https://twitter.com/intent/tweet?url=https://egyptra.com/tours&text=Amazing Egypt Tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-twitter"
+                    style="color: #1da1f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Twitter</span>
+                </a>
+                <a
+                  href="https://wa.me/?text=Amazing Egypt Tours - https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-whatsapp"
+                    style="color: #25d366"
+                    aria-hidden="true"
+                  ></i>
+                  <span>WhatsApp</span>
+                </a>
+                <button
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation();copyLink('https://egyptra.com/tours','tour-1')"
+                  type="button"
+                >
+                  <i
+                    class="fas fa-link"
+                    style="color: #6366f1"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Copy Link</span>
+                </button>
+              </div>
+
+              <img
+                src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="tour_content">
+                <div class="badge_content">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <h6><i class="fas fa-map-marker-alt"></i> Hurghada</h6>
+              <h2 class="title">
+                Hurghada: Quad, Jeep, Camel and Buggy Safari with BBQ Dinner
+              </h2>
+                <div class="rate">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rate_num">4.8</span>
+                    <span class="reviews">(938 Reviews)</span>
+                </div>
+                
+                <div class="icon_box">
+                    <div class="days">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>5 days</span>
+                    </div>
+
+                    <div class="person">
+                        <i class="fas fa-user-plus"></i>
+                        <span>4 person</span>
+                    </div>
+                </div>
+
+                <div class="tour_price">
+                    <p>From <span class="price">€169</span> <span class="old_Price">€ 249</span></p>
+                </div>
+            </div>
+          </div>
+
+           <div class="tours_item swiper-slide">
+            <a href="#" class="tours_link"></a>
+            <div class="tour_img">
+              <div class="badge">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <button
+                class="btn_share"
+                onclick="event.stopPropagation();event.preventDefault();toggleShare(event,'tour-1')"
+                aria-label="Share tour"
+                aria-expanded="false"
+                aria-haspopup="true"
+                type="button"
+              >
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </button>
+
+              <div class="share-dropdown" id="share-tour-1" role="menu">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-facebook-f"
+                    style="color: #1877f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href="https://twitter.com/intent/tweet?url=https://egyptra.com/tours&text=Amazing Egypt Tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-twitter"
+                    style="color: #1da1f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Twitter</span>
+                </a>
+                <a
+                  href="https://wa.me/?text=Amazing Egypt Tours - https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-whatsapp"
+                    style="color: #25d366"
+                    aria-hidden="true"
+                  ></i>
+                  <span>WhatsApp</span>
+                </a>
+                <button
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation();copyLink('https://egyptra.com/tours','tour-1')"
+                  type="button"
+                >
+                  <i
+                    class="fas fa-link"
+                    style="color: #6366f1"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Copy Link</span>
+                </button>
+              </div>
+
+              <img
+                src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="tour_content">
+                <div class="badge_content">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <h6><i class="fas fa-map-marker-alt"></i> Hurghada</h6>
+              <h2 class="title">
+                Hurghada: Quad, Jeep, Camel and Buggy Safari with BBQ Dinner
+              </h2>
+                <div class="rate">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rate_num">4.8</span>
+                    <span class="reviews">(938 Reviews)</span>
+                </div>
+                
+                <div class="icon_box">
+                    <div class="days">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>5 days</span>
+                    </div>
+
+                    <div class="person">
+                        <i class="fas fa-user-plus"></i>
+                        <span>4 person</span>
+                    </div>
+                </div>
+
+                <div class="tour_price">
+                    <p>From <span class="price">€169</span> <span class="old_Price">€ 249</span></p>
+                </div>
+            </div>
+          </div>
+
+
+           <div class="tours_item swiper-slide">
+            <a href="#" class="tours_link"></a>
+            <div class="tour_img">
+              <div class="badge">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <button
+                class="btn_share"
+                onclick="event.stopPropagation();event.preventDefault();toggleShare(event,'tour-1')"
+                aria-label="Share tour"
+                aria-expanded="false"
+                aria-haspopup="true"
+                type="button"
+              >
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </button>
+
+              <div class="share-dropdown" id="share-tour-1" role="menu">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-facebook-f"
+                    style="color: #1877f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href="https://twitter.com/intent/tweet?url=https://egyptra.com/tours&text=Amazing Egypt Tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-twitter"
+                    style="color: #1da1f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Twitter</span>
+                </a>
+                <a
+                  href="https://wa.me/?text=Amazing Egypt Tours - https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-whatsapp"
+                    style="color: #25d366"
+                    aria-hidden="true"
+                  ></i>
+                  <span>WhatsApp</span>
+                </a>
+                <button
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation();copyLink('https://egyptra.com/tours','tour-1')"
+                  type="button"
+                >
+                  <i
+                    class="fas fa-link"
+                    style="color: #6366f1"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Copy Link</span>
+                </button>
+              </div>
+
+              <img
+                src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="tour_content">
+                <div class="badge_content">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <h6><i class="fas fa-map-marker-alt"></i> Hurghada</h6>
+              <h2 class="title">
+                Hurghada: Quad, Jeep, Camel and Buggy Safari with BBQ Dinner
+              </h2>
+                <div class="rate">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rate_num">4.8</span>
+                    <span class="reviews">(938 Reviews)</span>
+                </div>
+                
+                <div class="icon_box">
+                    <div class="days">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>5 days</span>
+                    </div>
+
+                    <div class="person">
+                        <i class="fas fa-user-plus"></i>
+                        <span>4 person</span>
+                    </div>
+                </div>
+
+                <div class="tour_price">
+                    <p>From <span class="price">€169</span> <span class="old_Price">€ 249</span></p>
+                </div>
+            </div>
+          </div>
+
+          <div class="tours_item swiper-slide">
+            <a href="#" class="tours_link"></a>
+            <div class="tour_img">
+              <div class="badge">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <button
+                class="btn_share"
+                onclick="event.stopPropagation();event.preventDefault();toggleShare(event,'tour-1')"
+                aria-label="Share tour"
+                aria-expanded="false"
+                aria-haspopup="true"
+                type="button"
+              >
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </button>
+
+              <div class="share-dropdown" id="share-tour-1" role="menu">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-facebook-f"
+                    style="color: #1877f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href="https://twitter.com/intent/tweet?url=https://egyptra.com/tours&text=Amazing Egypt Tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-twitter"
+                    style="color: #1da1f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Twitter</span>
+                </a>
+                <a
+                  href="https://wa.me/?text=Amazing Egypt Tours - https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-whatsapp"
+                    style="color: #25d366"
+                    aria-hidden="true"
+                  ></i>
+                  <span>WhatsApp</span>
+                </a>
+                <button
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation();copyLink('https://egyptra.com/tours','tour-1')"
+                  type="button"
+                >
+                  <i
+                    class="fas fa-link"
+                    style="color: #6366f1"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Copy Link</span>
+                </button>
+              </div>
+
+              <img
+                src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="tour_content">
+                <div class="badge_content">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <h6><i class="fas fa-map-marker-alt"></i> Hurghada</h6>
+              <h2 class="title">
+                Hurghada: Quad, Jeep, Camel and Buggy Safari with BBQ Dinner
+              </h2>
+                <div class="rate">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rate_num">4.8</span>
+                    <span class="reviews">(938 Reviews)</span>
+                </div>
+                
+                <div class="icon_box">
+                    <div class="days">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>5 days</span>
+                    </div>
+
+                    <div class="person">
+                        <i class="fas fa-user-plus"></i>
+                        <span>4 person</span>
+                    </div>
+                </div>
+
+                <div class="tour_price">
+                    <p>From <span class="price">€169</span> <span class="old_Price">€ 249</span></p>
+                </div>
+            </div>
+          </div>
+
+           <div class="tours_item swiper-slide">
+            <a href="#" class="tours_link"></a>
+            <div class="tour_img">
+              <div class="badge">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <button
+                class="btn_share"
+                onclick="event.stopPropagation();event.preventDefault();toggleShare(event,'tour-1')"
+                aria-label="Share tour"
+                aria-expanded="false"
+                aria-haspopup="true"
+                type="button"
+              >
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </button>
+
+              <div class="share-dropdown" id="share-tour-1" role="menu">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-facebook-f"
+                    style="color: #1877f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href="https://twitter.com/intent/tweet?url=https://egyptra.com/tours&text=Amazing Egypt Tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-twitter"
+                    style="color: #1da1f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Twitter</span>
+                </a>
+                <a
+                  href="https://wa.me/?text=Amazing Egypt Tours - https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-whatsapp"
+                    style="color: #25d366"
+                    aria-hidden="true"
+                  ></i>
+                  <span>WhatsApp</span>
+                </a>
+                <button
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation();copyLink('https://egyptra.com/tours','tour-1')"
+                  type="button"
+                >
+                  <i
+                    class="fas fa-link"
+                    style="color: #6366f1"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Copy Link</span>
+                </button>
+              </div>
+
+              <img
+                src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="tour_content">
+                <div class="badge_content">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <h6><i class="fas fa-map-marker-alt"></i> Hurghada</h6>
+              <h2 class="title">
+                Hurghada: Quad, Jeep, Camel and Buggy Safari with BBQ Dinner
+              </h2>
+                <div class="rate">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rate_num">4.8</span>
+                    <span class="reviews">(938 Reviews)</span>
+                </div>
+                
+                <div class="icon_box">
+                    <div class="days">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>5 days</span>
+                    </div>
+
+                    <div class="person">
+                        <i class="fas fa-user-plus"></i>
+                        <span>4 person</span>
+                    </div>
+                </div>
+
+                <div class="tour_price">
+                    <p>From <span class="price">€169</span> <span class="old_Price">€ 249</span></p>
+                </div>
+            </div>
+          </div>
+
+
+           <div class="tours_item swiper-slide">
+            <a href="#" class="tours_link"></a>
+            <div class="tour_img">
+              <div class="badge">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <button
+                class="btn_share"
+                onclick="event.stopPropagation();event.preventDefault();toggleShare(event,'tour-1')"
+                aria-label="Share tour"
+                aria-expanded="false"
+                aria-haspopup="true"
+                type="button"
+              >
+                <i class="fas fa-share-alt" aria-hidden="true"></i>
+              </button>
+
+              <div class="share-dropdown" id="share-tour-1" role="menu">
+                <a
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-facebook-f"
+                    style="color: #1877f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Facebook</span>
+                </a>
+                <a
+                  href="https://twitter.com/intent/tweet?url=https://egyptra.com/tours&text=Amazing Egypt Tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-twitter"
+                    style="color: #1da1f2"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Twitter</span>
+                </a>
+                <a
+                  href="https://wa.me/?text=Amazing Egypt Tours - https://egyptra.com/tours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation()"
+                >
+                  <i
+                    class="fab fa-whatsapp"
+                    style="color: #25d366"
+                    aria-hidden="true"
+                  ></i>
+                  <span>WhatsApp</span>
+                </a>
+                <button
+                  class="share-option"
+                  role="menuitem"
+                  onclick="event.stopPropagation();copyLink('https://egyptra.com/tours','tour-1')"
+                  type="button"
+                >
+                  <i
+                    class="fas fa-link"
+                    style="color: #6366f1"
+                    aria-hidden="true"
+                  ></i>
+                  <span>Copy Link</span>
+                </button>
+              </div>
+
+              <img
+                src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="tour_content">
+                <div class="badge_content">
+                <span> <i class="fas fa-crown"></i> Bestseller</span>
+              </div>
+              <h6><i class="fas fa-map-marker-alt"></i> Hurghada</h6>
+              <h2 class="title">
+                Hurghada: Quad, Jeep, Camel and Buggy Safari with BBQ Dinner
+              </h2>
+                <div class="rate">
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rate_num">4.8</span>
+                    <span class="reviews">(938 Reviews)</span>
+                </div>
+                
+                <div class="icon_box">
+                    <div class="days">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>5 days</span>
+                    </div>
+
+                    <div class="person">
+                        <i class="fas fa-user-plus"></i>
+                        <span>4 person</span>
+                    </div>
+                </div>
+
+                <div class="tour_price">
+                    <p>From <span class="price">€169</span> <span class="old_Price">€ 249</span></p>
+                </div>
+            </div>
+          </div>
+          
+
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <div class="descount_banner">
+      <div class="container">
+        <a href="cart.html" class="descount_banner_item clickable-banner">
+          <div class="div_img">
+            <img
+              src="https://egyptra.pro/uploads/photo_library/photo_67bc30811b730.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="content">
+            <div class="text">
+              <h4>Enjoy Summer Deals</h4>
+              <h3>Up to 40% Discount!</h3>
+              <span class="btn"
+                >See Details
+                <svg
+                  width="21"
+                  height="16"
+                  viewBox="0 0 21 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.0017 8.00001H19.9514M19.9514 8.00001L12.9766 1.02515M19.9514 8.00001L12.9766 14.9749"
+                    stroke="currentColor"
+                    stroke-width="1.77778"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path></svg
+              ></span>
+            </div>
+            <img src="img/sm_icon_baanner.webp" alt="" />
+          </div>
+        </a>
       </div>
     </div>
 
- 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
     <!-- JavaScript -->
+    <script src="js/header.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
