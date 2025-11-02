@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
-        speed: 800,
+        speed: 400,
  
         navigation: {
             nextEl: '.swiper-button-next',
@@ -112,6 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
             320: {
                 slidesPerView: 1,
                 spaceBetween: 15,
+                speed: 300,
             },
             // Tablet (768px and up): 2 slides
             768: {
@@ -141,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
         },
-        speed: 800,
+        speed: 400,
  
         navigation: {
             nextEl: '.swiper-button-next',
@@ -153,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
             320: {
                 slidesPerView: 1,
                 spaceBetween: 10,
+                
             },
             // Tablet (768px and up): 2 slides
             768: {

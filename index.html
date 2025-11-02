@@ -21,6 +21,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    
+
   </head>
 
   <body>
@@ -670,9 +672,58 @@
       </div>
     </section>
 
+    <section class="about">
+
+      <img class="img_design_sec  about_right_img" src="img/1231255.webp" alt="">
+        <img class="img_design_sec  about_left_img" src="img/download.webp" alt="">
+
+      <div class="container">
+        <div class="div_text">
+          <h6>Dream Your Next Trip</h6>
+          <h2>discover when even <br>
+              you want to go</h2>
+          <p class="p_about">Are you tired of the typical tourist destinations and looking to step out of your comfort zone? Adventure travel may be the perfect solution for you! Here are four.</p>
+
+          <div class="icon_text">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h5>Adventure Tours</h5>
+              <p>Are you tired of the typical tourist destinatio and looking step out of your comfort.</p>
+            </div>
+
+          </div>
+
+              <div class="icon_text">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h5>Adventure Tours</h5>
+              <p>Are you tired of the typical tourist destinatio and looking step out of your comfort.</p>
+            </div>
+
+          </div>
+
+          <div class="div_btns">
+            <a href="#" class="btn">Book Now <i class="fas fa-arrow-right arrow_rotate"></i></a>
+          </div>
+        </div>
+
+        <div class="div_img">
+          <img class="img_big" src="img/about1.webp" alt="">
+          <img class="img_sm" src="img/bghero.webp" alt="">
+        </div>
+      </div>
+    </section>
+
     <!-- Destinations Section -->
 
     <section class="dest_section">
+
+      <img class="img_design_sec  dest_left_img" src="img/plan1.webp" alt="">
+      <img class="img_design_sec  dest_right_img" src="img/cloude-1-2.png" alt="">
       <div class="head_sec">
         <h2>Top Egypt Destinations</h2>
         <p>Discover the most popular tourist destinations & attractions</p>
@@ -777,6 +828,8 @@
     </section>
 
     <section class="tours">
+          <img class="img_design_sec  tours_left_img" src="img/prymid.webp" alt="">
+        <img class="img_design_sec  tours_right_img" src="img/image.webp" alt="">
       <div class="head_sec">
         <h2>Most Popular Tours</h2>
         <p>
@@ -1573,6 +1626,9 @@
 
 
     <section class="categories">
+
+          <img class="img_design_sec  categories_left_img" src="img/121212fd.webp" alt="">
+        <img class="img_design_sec  categories_right_img" src="img/1231255.webp" alt="">
             <div class="head_sec">
         <h2>Safari Tours in Egypt & Boat Tours Categories</h2>
         <p>Explore the best safari tours in Egypt, boat tours, diving excursions, and historical journeys</p>
@@ -1735,6 +1791,242 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="egypt-contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <!-- <img src="img/logo.png" alt="Egyptra" class="egyptra-logo"> -->
+                <h2 class="contact-title">
+                    <i class="fas fa-star-and-crescent"></i>
+                    Ready to Explore Egypt's Wonders?
+                </h2>
+                <p class="contact-subtitle">Egyptian travel experts are ready to help you plan the perfect Egyptian adventure. From ancient wonders to Red Sea paradise - choose your interests and we'll contact you within 2 hours with personalized recommendations!</p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <strong>500+</strong>
+                        <span>Available Activities</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>2 Hours</strong>
+                        <span>Response Time</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>24/7</strong>
+                        <span>Expert Support</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-content-wrapper">
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3 class="form-title">
+                            <i class="fas fa-star"></i>
+                            Get Your Personalized Egyptian Travel Expert Experience
+                        </h3>
+                        
+                        <!-- Popup Overlay -->
+                        <div id="contact-popup" class="contact-popup-overlay" style="display:none">
+                            <div class="contact-popup">
+                                <div class="popup-content">
+                                    <div class="popup-icon" id="popup-icon">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <div class="popup-message" id="popup-message"></div>
+                                    <button class="popup-close" id="popup-close">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form class="contact-form" id="contactForm">
+                            <input type="hidden" name="ajax_contact_form" value="1">
+                            <input type="hidden" name="page_source" value="Egypt Contact Page">
+                            <input type="hidden" name="form_context" value="default">
+                            <input type="text" name="contact_website" style="display:none" tabindex="-1">
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact_name"><i class="fas fa-user"></i> Full Name *</label>
+                                    <input type="text" name="contact_name" id="contact_name" class="form-input" required minlength="2" maxlength="100" placeholder="Enter your full name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact_email"><i class="fas fa-envelope"></i> Email Address *</label>
+                                    <input type="email" name="contact_email" id="contact_email" class="form-input" required placeholder="your.email@example.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact_phone"><i class="fas fa-phone"></i> Phone Number</label>
+                                    <input type="tel" name="contact_phone" id="contact_phone" class="form-input" placeholder="+1234567890 (Optional)">
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferred_date"><i class="fas fa-calendar"></i> Preferred Date</label>
+                                    <input type="date" name="preferred_date" id="preferred_date" class="form-input">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="group_size"><i class="fas fa-users"></i> Group Size</label>
+                                    <select name="group_size" id="group_size" class="form-input">
+                                        <option value="">Select group size</option>
+                                        <option value="Solo (1 person)">Solo (1 person)</option>
+                                        <option value="Couple (2 people)">Couple (2 people)</option>
+                                        <option value="Small group (3-5 people)">Small group (3-5 people)</option>
+                                        <option value="Medium group (6-10 people)">Medium group (6-10 people)</option>
+                                        <option value="Large group (11+ people)">Large group (11+ people)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group services-group">
+                                <label>
+                                    <i class="fas fa-list-check"></i> Choose Activities That Interest You * 
+                                    <small>(Choose from 500+ Egyptian activities)</small>
+                                </label>
+                                
+                                <div class="services-search-container">
+                                    <input type="text" id="servicesSearch" class="services-search-input" placeholder="Search from 500+ activities...">
+                                    <i class="fas fa-search search-icon"></i>
+                                    <div class="search-suggestions" id="searchSuggestions"></div>
+                                </div>
+                                
+                                <div class="services-categories">
+                                    <button type="button" class="category-filter active" data-category="all">All (500)</button>
+                                    <button type="button" class="category-filter" data-category="cultural">Cultural & Historical</button>
+                                    <button type="button" class="category-filter" data-category="red_sea">Red Sea & Diving</button>
+                                    <button type="button" class="category-filter" data-category="adventure">Adventure & Safari</button>
+                                    <button type="button" class="category-filter" data-category="luxury">Luxury & VIP</button>
+                                    <button type="button" class="category-filter" data-category="family">Family & Kids</button>
+                                    <button type="button" class="category-filter" data-category="nile">Nile & Cruises</button>
+                                </div>
+                                
+                                <div class="services-grid" id="servicesGrid">
+                                    <!-- Services will be populated by JavaScript -->
+                                </div>
+                                
+                                <div class="selected-services-summary" id="selectedSummary" style="display:none">
+                                    <strong>Selected Services (<span id="selectedCount">0</span>):</strong>
+                                    <div class="selected-tags" id="selectedTags"></div>
+                                    <button type="button" class="clear-selection" id="clearSelection">
+                                        <i class="fas fa-times"></i> Clear All
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contact_message">
+                                    <i class="fas fa-comment"></i> Tell Us About Your Egyptian Adventure Plans *
+                                </label>
+                                <textarea name="contact_message" id="contact_message" class="form-textarea" rows="4" required minlength="10" maxlength="2000" placeholder="Tell us about your travel dates, group size, budget range, experience level, special requirements, or any specific questions about Egypt..."></textarea>
+                                <div class="textarea-counter">
+                                    <span id="messageCounter">0</span>/2000 characters
+                                </div>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="contact-submit-btn" id="contactSubmitBtn">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span>Get My Egyptian Adventure</span>
+                                    <small>Expert consultation within 2 hours</small>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="contact-info-sidebar">
+                    
+                    <div class="info-card urgent-contact">
+                        <div class="urgent-header">
+                            <div class="online-pulse"></div>
+                            <h4><i class="fas fa-headset"></i> Need Immediate Help?</h4>
+                            <p>Our Egyptian travel experts are online now!</p>
+                        </div>
+                        
+                        <div class="urgent-actions">
+                            <a href="tel:+201011957868" class="urgent-phone">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <strong>Call Now</strong>
+                                    <span>+20 101 195 7868</span>
+                                </div>
+                            </a>
+                            
+                            <a href="mailto:operations@egyptra.com" class="urgent-email">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email Us</strong>
+                                    <span>operations@egyptra.com</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://wa.me/201011957868" class="urgent-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <span>Chat instantly</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card response-card">
+                        <h4><i class="fas fa-clock"></i> Response Guarantee</h4>
+                        <div class="response-guarantee">
+                            <div class="response-item">
+                                <i class="fas fa-bolt"></i>
+                                <div>
+                                    <strong>2 Hours</strong>
+                                    <span>Maximum response time</span>
+                                </div>
+                            </div>
+                            <div class="response-item">
+                                <i class="fas fa-user-tie"></i>
+                                <div>
+                                    <strong>Expert</strong>
+                                    <span>Egyptian Travel Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card trust-card">
+                        <h4><i class="fas fa-shield-alt"></i> Why Choose Us?</h4>
+                        <div class="trust-indicators">
+                            <div class="trust-item">
+                                <i class="fas fa-medal"></i>
+                                <span>15+ Years Experience</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="fas fa-users"></i>
+                                <span>50,000+ Happy Travelers</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.9/5 Rating</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="fas fa-lock"></i>
+                                <span>Secure Booking</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="fas fa-phone-volume"></i>
+                                <span>24/7 Support</span>
+                            </div>
+                            <div class="trust-item">
+                                <i class="fas fa-undo"></i>
+                                <span>Free Cancellation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
@@ -1812,5 +2104,8 @@
     <!-- JavaScript -->
     <script src="js/header.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+
+
   </body>
 </html>
