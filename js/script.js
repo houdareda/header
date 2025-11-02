@@ -1,16 +1,17 @@
-// Share functionality
-window.toggleShare = function(e, p) {
+// Share functionality - Class-based approach
+window.toggleShare = function(e) {
     e.preventDefault();
     e.stopPropagation();
-    const d = document.getElementById('share-' + p);
+    
     const btn = e.target.closest('.btn_share');
-    const a = document.querySelectorAll('.share-dropdown');
+    const dropdown = btn.nextElementSibling; // Get the dropdown next to the button
+    const allDropdowns = document.querySelectorAll('.share-dropdown');
     
     // Close all other dropdowns
-    a.forEach(function(s) {
-        if (s !== d) {
-            s.classList.remove('active');
-            const shareBtn = s.previousElementSibling;
+    allDropdowns.forEach(function(d) {
+        if (d !== dropdown) {
+            d.classList.remove('active');
+            const shareBtn = d.previousElementSibling;
             if (shareBtn) {
                 shareBtn.setAttribute('aria-expanded', 'false');
             }
@@ -18,25 +19,28 @@ window.toggleShare = function(e, p) {
     });
     
     // Toggle current dropdown
-    d.classList.toggle('active');
-    btn.setAttribute('aria-expanded', d.classList.contains('active'));
+    dropdown.classList.toggle('active');
+    btn.setAttribute('aria-expanded', dropdown.classList.contains('active'));
 };
 
-// Copy link functionality
-window.copyLink = function(url, p) {
-    const d = document.getElementById('share-' + p);
-    const c = d.querySelector('.share-option:last-child');
-    const originalText = c.querySelector('span').textContent;
+// Copy link functionality - Class-based approach
+window.copyLink = function(e, url) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const copyBtn = e.target.closest('.share-option');
+    const dropdown = copyBtn.closest('.share-dropdown');
+    const originalText = copyBtn.querySelector('span').textContent;
     
     navigator.clipboard.writeText(url).then(function() {
-        c.querySelector('span').textContent = 'Copied!';
-        c.style.background = '#10b981';
-        c.style.color = 'white';
+        copyBtn.querySelector('span').textContent = 'Copied!';
+        copyBtn.style.background = '#10b981';
+        copyBtn.style.color = 'white';
         
         setTimeout(function() {
-            c.querySelector('span').textContent = originalText;
-            c.style.background = '';
-            c.style.color = '';
+            copyBtn.querySelector('span').textContent = originalText;
+            copyBtn.style.background = '';
+            copyBtn.style.color = '';
         }, 2000);
     }).catch(function() {
         // Fallback for older browsers
@@ -47,14 +51,14 @@ window.copyLink = function(url, p) {
         document.execCommand('copy');
         document.body.removeChild(textArea);
         
-        c.querySelector('span').textContent = 'Copied!';
-        c.style.background = '#10b981';
-        c.style.color = 'white';
+        copyBtn.querySelector('span').textContent = 'Copied!';
+        copyBtn.style.background = '#10b981';
+        copyBtn.style.color = 'white';
         
         setTimeout(function() {
-            c.querySelector('span').textContent = originalText;
-            c.style.background = '';
-            c.style.color = '';
+            copyBtn.querySelector('span').textContent = originalText;
+            copyBtn.style.background = '';
+            copyBtn.style.color = '';
         }, 2000);
     });
 };

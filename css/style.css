@@ -1106,7 +1106,7 @@ footer .container .row h4{
 footer .container .row .links{
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 10px;
 }
 
 
