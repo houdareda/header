@@ -1207,6 +1207,9 @@ footer  .bottom_footer .payment_img{
         justify-content: center;
         margin-top: 10px;
     }
+    footer .container{
+        padding: 30px 20px;
+    }
 }
 
 
