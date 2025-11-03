@@ -174,4 +174,47 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
     });
+
+    // Testimonial Swiper Configuration
+    const testimonialSwiper = new Swiper('.testimonial-swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 600,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.testimonial-swiper .swiper-button-next',
+            prevEl: '.testimonial-swiper .swiper-button-prev',
+        },
+        
+        // Pagination
+        pagination: {
+            el: '.testimonial-swiper .swiper-pagination',
+            clickable: true,
+        },
+
+        breakpoints: {
+            // Mobile (up to 767px): 1 slide
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                  speed: 400,
+            },
+            // Tablet (768px and up): 2 slides
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            // Desktop (1024px and up): 3 slides
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
+
+    });
 });
