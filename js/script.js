@@ -217,4 +217,23 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
     });
+
+    // ===== Destinations Tabs Functionality =====
+    const tabs = document.querySelectorAll('.dest-tab');
+    const panels = document.querySelectorAll('.dest-panel');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // remove active
+            tabs.forEach(t => t.classList.remove('active'));
+            panels.forEach(p => p.classList.remove('active'));
+
+            // add active
+            tab.classList.add('active');
+            const targetPanel = document.getElementById(tab.dataset.target);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
+    });
 });

@@ -2793,6 +2793,10 @@ linear 0s forwards infinite alternate;
     z-index: 1;
     width: 23.5%;
     text-align: center;
+    top: 0;
+}
+.widget_counter .widget_counter_item:hover{
+    
 }
 .widget_counter .widget_counter_item::before {
     content: "";
@@ -3119,4 +3123,130 @@ linear 0s forwards infinite alternate;
     .author-info span {
         font-size: 12px;
     }
+}
+
+/* ===== Destinations Section Styles ===== */
+.destinations_sec_link {
+  width: 100%;
+  background: linear-gradient(rgba(22, 33, 56, 0.705), #1D263B), url('https://egyptra.pro/uploads/photo_library/photo_6895eb6fe7019.webp');
+  background-size: cover;
+  background-position:center;
+  padding: 120px 0 100px;
+}
+
+.destinations_sec_link .destinations-head .head_title{
+    color: var(--bg-white-color);
+}
+
+.destinations_sec_link .destinations-head p {
+  margin-bottom: 2.5rem;
+  color: var(--bg-soft-color);
+}
+
+/* tabs */
+.destinations_sec_link .dest-tabs {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.destinations_sec_link .dest-tab {
+  background: #ffffff11;
+  border: 1px solid rgba(255, 255, 255, 0.171);
+    backdrop-filter: blur(8px);
+  color: var(--bg-white-color);
+  padding: .5rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: .2s;
+  font-weight: 500;
+}
+
+.destinations_sec_link .dest-tab.active,
+.destinations_sec_link .dest-tab:hover {
+  background: var(--sand-color);
+  border-color: var(--sand-color);
+  color: #071632;
+}
+
+/* panels */
+.destinations_sec_link .dest-panel {
+  display: none;
+}
+
+.destinations_sec_link .dest-panel.active {
+  display: block;
+}
+
+/* cards grid */
+.destinations_sec_link .dest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.destinations_sec_link .dest-card {
+  background: #ffffff11;
+  border: 1px solid rgba(255, 255, 255, 0.171);
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 215px;
+  backdrop-filter: blur(8px);
+}
+
+.destinations_sec_link .dest-card h3 {
+  font-size: 1.1rem;
+  color: var(--sand-color);
+  margin-bottom: 8px;
+}
+
+.destinations_sec_link .dest-card p {
+  color: #e0e0e0;
+  font-size: .85rem;
+  margin-bottom: 20px;
+}
+
+.destinations_sec_link .dest-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: .35rem;
+  margin-bottom: 15 px;
+}
+
+.destinations_sec_link .dest-card ul li a {
+  color: #b8b8b8;
+  text-decoration: none;
+  font-size: .85rem;
+  border-bottom: 1px solid transparent;
+  transition: .2s;
+}
+
+.destinations_sec_link .dest-card ul li a:hover {
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.destinations_sec_link .dest-more {
+  margin-top: auto;
+  font-size: .8rem;
+  color: var(--sand-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .destinations_sec_link .destinations {
+    border-radius: 1rem;
+  }
+  .destinations_sec_link .dest-tabs {
+    gap: .5rem;
+  }
+  .destinations_sec_link .dest-tab {
+    font-size: .75rem;
+  }
 }
