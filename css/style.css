@@ -3215,7 +3215,7 @@ linear 0s forwards infinite alternate;
   margin: 0;
   display: grid;
   gap: .35rem;
-  margin-bottom: 15 px;
+  margin-bottom: 15px;
 }
 
 .destinations_sec_link .dest-card ul li a {
